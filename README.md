@@ -1,0 +1,2 @@
+# BraDD-S1TS
+This is the official implementation of the paper: DEFORESTATION DETECTION IN THE AMAZON WITH SENTINEL-1 SAR IMAGE TIME SERIES [ISPRS 23] 
