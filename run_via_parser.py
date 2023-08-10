@@ -22,7 +22,8 @@ def create_folder(*names) -> str:
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--Storing_experimentName', type=str, default='Default')
-    parser.add_argument('--Storing_wandbProject', type=str)  # For disable, give 'None'
+    parser.add_argument('--Storing_wandbProject', type=str)
+    # For not using W&B, use '--Storing_wandbProject None' ==> None in str
     parser.add_argument('--Storing_wandbEntity', type=str)
     parser.add_argument('--Storing_wandbTags', type=str, nargs='+', default=['Default'])
     parser.add_argument('--Storing_savingPath', type=str)
@@ -46,12 +47,12 @@ if __name__ == '__main__':
     parser.add_argument('--Network_forwardType', type=str, default='segment')
     parser.add_argument('--Network_architecture', type=str, default='UTAE')
     parser.add_argument('--Network_Model_out_conv', type=int, nargs='+', default=[32, 2])
-    # NOTE: Last Channel = 3 for diffusion or 2 for default
+    # NOTE: Last Channel = {num_class} for multi-class problem or 2 for default (Binary Problem)
 
     parser.add_argument('--Loss_name', type=str, default='CrossEntropy')
     # parser.add_argument('--Loss_LossHyperparameters_...', type=str)  # ==> Use for hyperparameter sweeping
 
-    parser.add_argument('--Score_numClass', type=int, default=2)
+    parser.add_argument('--Score_numClass', type=int, default=2)  # 2 For binary problem
     parser.add_argument('--Score_evalScores', type=bool, default=True)
     parser.add_argument('--Score_runningScores', type=bool, default=False)
 
