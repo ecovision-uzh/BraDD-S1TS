@@ -1,7 +1,7 @@
 # DEFORESTATION DETECTION IN THE AMAZON WITH SENTINEL-1 SAR IMAGE TIME SERIES
 
 This is the official implementation of the paper:  
-- Deforestation Detection in the Amazon with Sentinel-1 SAR Image Time Series (ISPRS 23)
+- [Deforestation Detection in the Amazon with Sentinel-1 SAR Image Time Series (ISPRS 23)](https://isprs-annals.copernicus.org/articles/X-1-W1-2023/835/2023/)
 
 ## Abstract
 
@@ -30,4 +30,18 @@ python run_via_parser.py \
 --Storing_wandbEntity your_username \
 --Storing_savingPath /path/for/experiments/ \
 --DataModule_Dataset_path /path/for/dataset/
+```
+
+# Citation
+```
+@Article{isprs-annals-X-1-W1-2023-835-2023,
+AUTHOR = {Karaman, K. and Sainte Fare Garnot, V. and Wegner, J. D.},
+TITLE = {DEFORESTATION DETECTION IN THE AMAZON WITH SENTINEL-1 SAR IMAGE TIME SERIES},
+JOURNAL = {ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial Information Sciences},
+VOLUME = {X-1/W1-2023},
+YEAR = {2023},
+PAGES = {835--842},
+URL = {https://isprs-annals.copernicus.org/articles/X-1-W1-2023/835/2023/},
+DOI = {10.5194/isprs-annals-X-1-W1-2023-835-2023}
+}
 ```
