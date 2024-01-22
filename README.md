@@ -1,5 +1,9 @@
 # DEFORESTATION DETECTION IN THE AMAZON WITH SENTINEL-1 SAR IMAGE TIME SERIES
 
+<p align="center" width="100%">
+    <img src="./pictures/DatasetFigure.svg"> 
+</p>
+
 This is the official implementation of the paper:  
 - [Deforestation Detection in the Amazon with Sentinel-1 SAR Image Time Series (ISPRS 23)](https://isprs-annals.copernicus.org/articles/X-1-W1-2023/835/2023/)
 
@@ -9,6 +13,10 @@ Deforestation has a significant impact on the environment, accelerating global w
 
 # Setup
 ## Dataset (BraDD-S1TS)
+
+<p align="center" width="100%">
+    <img src="./pictures/CenterLocationMap.svg"> 
+</p>
 
 Please [download](https://zenodo.org/record/8060250/files/BraDD-S1TS_zenodo.zip?download=1) the files from [Zenodo Link](https://zenodo.org/record/8060250). 
 Then, unzip them for a certain directory which should be also pointed out in the main code.
